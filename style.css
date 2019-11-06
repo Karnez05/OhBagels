@@ -1,0 +1,879 @@
+body{
+    margin: 0;
+    padding:5px;
+    width: 100%;
+}
+
+.layout{
+   background-image: url(images/bagels.jpg);
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center;
+   height: 400px;
+   width: 100%;
+
+}
+
+.slogan{
+    font-family: 'Abril Fatface', cursive;
+    font-size: 62px;    
+    text-align: center;
+    padding-top: 85px;
+    color:rgb(255, 255, 255);
+   text-shadow: 1px 2px 2px black; 
+   
+}
+
+.slogan h1{
+    text-shadow: 1px 2px 2px;
+    font-size: 22px;
+    font-weight: normal;
+    color:rgb(255, 255, 255);
+    text-shadow: 1px 2px 2px black; 
+    margin-top: 10px;
+    line-height: 25px;
+    letter-spacing: 3px;
+    word-spacing: 5px;
+    width: 100%;
+    height: 50px;
+}
+
+.navbar {
+    height: 100px;
+    background-color:white;
+    margin-bottom: 5px;
+    
+    
+}
+
+.logo img{
+    width: 200px;
+    height: 100px;
+    right: 20px;
+   transition: 0.75s;
+}
+.logo img:hover{
+    transform: scalex(1.07);
+}
+
+.nav{
+    margin-left: 580px;
+    font-size: 18px;
+    width: 500px;
+    height: 44px;
+    left: 450px;
+    border-spacing: 40px;
+   
+}
+.navbar-brand{
+  margin: 0;
+  padding:0;
+}
+ 
+.nav-link{
+    color: rgba(168, 104, 8, 0.39);
+    text-shadow: 1px 1px 2px black;
+}
+
+.nav-link:hover{
+    color:white;
+    background:rgba(168, 104, 8, 0.39);
+    border-radius: 5px;
+
+}
+
+.nav-item button{
+    height: 44px;
+    background:rgba(168, 104, 8, 0.39);
+    box-shadow: 0px 0px 10px black;
+    border: none;
+    font-family: 'Abril Fatface', cursive;
+    width: 100px;
+    color: white;
+    font-size: 18px;
+    word-spacing: 3px;
+}
+
+.nav-item button:hover{
+    box-shadow: 0px 0px 10px black;
+    background: white;
+    color:rgba(168, 104, 8, 0.39);
+    font-family: 'Abril Fatface', cursive;
+    border: none;
+}
+
+.nav-item button:active{
+    background-color: rgba(168, 104, 8, 0.39);
+}
+.btn:focus,.btn:active{
+    box-shadow: none !important;
+}
+
+.dropdown a:hover{
+    text-decoration: none;
+    
+}
+
+.dropdown li:hover{
+    background-color: rgb(250, 250, 250);
+}
+
+.buttons{
+    width: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+    color: rgba(168, 104, 8, 0.39);
+    
+
+}
+
+.sign-up:hover{
+    font-family: 'Abril Fatface', cursive;
+    background-color:white;
+    color:rgba(168, 104, 8, 0.39);
+    border-radius: 5px;
+    border: none;
+    width: 200px;
+ 
+}
+
+.sign-up{
+    width: 200px;
+    height: 40px;
+    margin-right: 10px;
+    font-family: 'Abril Fatface', cursive;
+    color: white;
+    background:rgba(168, 104, 8, 0.39);
+    box-shadow: 0px 0px 10px black;
+    border: none;
+    border-radius: 5px;
+}
+
+.menu{
+    background-image: url(images/menu.jpg);
+    text-align: center;
+    height: 400px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.slogan p{
+    font-family: 'Abril Fatface', cursive; 
+    font-size: 90px;
+
+    text-align: center;
+    margin-bottom: 0;
+    height: 120px;
+    
+}
+
+.slogan button{
+    width: 200px;
+    height: 60px;
+    border: none;
+    font-family: 'Abril Fatface', cursive;
+    font-size: 20px;
+    color: white;
+    background:rgba(168, 104, 8, 0.39);
+    box-shadow: 0px 0px 10px black;
+    margin: 0, 0, 60px;
+    border-radius: 5px;
+}
+
+.slogan button:hover{
+    font-family: 'Abril Fatface', cursive;
+    background-color:white;
+    color:rgba(168, 104, 8, 0.39);
+    border-radius: 5px;
+    width: 200px;
+}
+
+
+
+.delivery h1{
+    font-family: 'Abril Fatface', cursive; 
+    font-size: 100px;
+    color:rgba(168, 104, 8, 0.39);
+
+}
+.delivery p {
+    font-family: 'Abril Fatface', cursive; 
+    font-size: 23px;
+    color:rgb(135, 83, 11);
+    line-height: 5px;
+    word-spacing: 4px;
+  
+}
+.top-row li img{
+    border-radius:10px;
+}
+.bottom-row li img{
+    border-radius:10px;
+}
+
+.yum{
+    background-image: url(images/menu.jpg);
+    margin: 0 0 5px 0;
+}
+.yum h1{
+    font-family: 'Abril Fatface', cursive; 
+    font-size: 90px;
+    padding: 100px 0 0 0;
+    text-align: center;
+    margin: 0;
+    height: 200px;
+    color: white; 
+    text-shadow: 0px 0px 10px black;
+    
+}
+.yum p{
+    font-family: 'Abril Fatface', cursive;
+    text-align: center;
+    text-shadow: 1px 2px 2px;
+    font-size: 22px;
+    font-weight:normal;
+    color:rgb(255, 255, 255);
+    text-shadow: 1px 2px 2px black; 
+    margin-top: 10px;
+    line-height: 5px;
+    word-spacing: 5px;
+}
+
+
+.social{
+    width: 100%;
+    height: 500px;
+    background-color:#e7eaee;
+}
+.social h1{
+    font-family: 'Abril Fatface', cursive; 
+    font-size: 80px;
+    color:rgba(168, 104, 8, 0.39); 
+    word-spacing: 10px;
+    padding: 20px 0 20px 0;
+    margin: 0;
+}
+.icons h1{
+    font-family: 'Abril Fatface', cursive; 
+    font-size: 23px;
+    color:rgb(135, 83, 11); 
+    word-spacing: 3px;
+    margin: 0 25px;
+    text-align: center;
+    padding: 10px 0 0 0;
+}
+.perks{
+    margin-top: 0;
+    justify-content:none;
+}
+
+.card{
+    background-image: url(images/perks.png);
+    background-repeat: no-repeat;
+    
+}
+ 
+.card h1{
+    text-align: right;
+    font-size: 40px;
+    color: rgba(168, 104, 8, 0.39); 
+    font-family: 'Abril Fatface', cursive;
+    text-shadow: 1px 1px 1px black;
+    width: 100%;
+    word-spacing: 10px;
+    margin: 55px 0 0 0;
+    padding-right: 100px;
+}
+
+.card p {
+    text-align: justify;
+    font-weight: 600;
+    font-size: 18px;
+    color: black;
+    padding: 0 99px 0 31px;
+    
+    width: 50%;
+    word-spacing: 2px;
+    margin: 10px 0 0 0;
+  
+}
+
+
+
+.slideshow-container {
+    position: relative;
+
+    height: 115px;
+  }
+  
+  /* Slides */
+  .mySlides {
+    display: none;
+    padding: 54px 0 10px 0;
+    text-align: center;
+    font-size: 19px;
+    color: rgb(105, 59, 26); 
+    font-family: 'Abril Fatface', cursive;
+  }
+  
+  /* Next & previous buttons */
+  .prev,.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -20px;
+    padding: 16px;
+    
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    position: absolute;
+    right: 0;
+    border-radius: 3px 0 0 3px;
+
+  }
+  .prev {
+    position: absolute;
+    left: 0;
+    border-radius: 3px 0 0 3px;
+    
+  }
+  
+  /* On hover,add a black background color with a little bit see-through */
+   .prev:hover,.next:hover {
+    background-color:rgb(105, 59, 26);
+    color: white;
+  }
+  
+  
+  /* Thedots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  /* Add a background color to the active dot/circle */
+  .active, .dot:hover {
+    background-color:#e7eaee ;
+  }
+  .boxes{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+   
+}
+
+
+.one img{
+    height: 300px;
+    width: 100%;
+    transition:ease-in-out 2s;
+    display: block;
+ 
+ }
+ 
+ .one img:hover{
+     transform: scale(1.2);
+     overflow: hidden;
+    
+ }
+
+
+
+.cookies {
+    background-image: url(images/cookies.jpg);
+    
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition-timing-function: ease-in;
+    transition-duration: 2s;
+}
+
+.cookies:hover {
+    transform: scale(1.02);
+    transition-timing-function: ease-out;
+    transition-duration: 1s;
+
+}
+
+.cookies h1{
+    font-family: 'Abril Fatface', cursive;
+    width: 100%;
+    height: 200px;
+    text-align: center;
+    word-spacing: 5px;
+    font-size: 40px;
+    font-weight:normal;
+    color:rgb(255, 255, 255);
+    text-shadow: 1px 2px 2px black; 
+}
+
+.cookies a:hover {
+    text-decoration: none;
+}
+
+.cof {
+    background-image: url(images/coffee.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition-timing-function: ease-in;
+    transition-duration: 1s;
+
+}
+
+.cof:hover {
+    transform: scale(1.02);
+    transition-timing-function: ease-out;
+    transition-duration: 1s;
+
+}
+
+.cof h1{
+    font-family: 'Abril Fatface', cursive;
+    width: 100%;
+    height: 200px;
+    text-align: center;
+    word-spacing: 5px;
+    font-size: 40px;
+    font-weight:normal;
+    color:rgb(255, 255, 255);
+    text-shadow: 1px 2px 2px black; 
+}
+
+.cof a:hover {
+    text-decoration: none;
+}
+
+#myBtn {
+    display: none; 
+   position: fixed; 
+    bottom: 20px; 
+   right: 30px;
+    z-index: 99;
+    border: none; 
+    outline: none; 
+   background-color: rgba(168, 104, 8, 0.39); 
+    color: white; 
+   cursor: pointer; 
+    padding: 15px; 
+   border-radius: 10px; 
+    font-size: 15px; 
+    font-weight: 600;
+  }
+  
+  #myBtn:hover {
+    background-color: white;
+    color: rgba(168, 104, 8, 0.39);
+    font-weight: 600;
+  } 
+
+.aboutus {
+    background-image: url(images/about.us.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: 50%;
+
+}
+
+.sections p{
+    margin: 15px 0;
+}
+
+.sections h1{
+    font-family: 'Abril Fatface', cursive;
+    width: 100%;
+    height: 35px;
+    word-spacing: 3px;
+    font-size: 30px;
+    font-weight:normal;
+    color:rgba(168, 104, 8, 0.39);
+    text-shadow: 1px 1px 1px black;
+    margin: 10px 0;
+}
+
+.sections h3{
+    font-family: 'Abril Fatface', cursive;
+    width: 100%;
+    height: 25px;
+    word-spacing: 3px;
+    font-size: 20px;
+    font-weight:normal;
+    color:rgb(105, 59, 26);
+    margin: 10px 0;
+}
+
+.mission :hover{
+    background-color: rgb(105, 59, 26);
+   
+}
+ .mission h2{
+     color:rgba(168, 104, 8, 0.39)
+ }
+
+ .mission h2:hover{
+    color: white;
+}
+
+
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+    padding-top: 60px;
+  }
+  
+ 
+  .modal-content {
+    background-color: #fefefe;
+    margin: 5px auto; /* 15% from the top and centered */
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+  }
+  
+  /* The Close Button */
+  .close {
+    /* Position it in the top right corner outside of the modal */
+    position: absolute;
+    right: 25px;
+    top: 0; 
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+  }
+  
+  /* Close button on hover */
+  .close:hover,
+  .close:focus {
+    color: red;
+    cursor: pointer;
+  }
+  
+  /* Add Zoom Animation */
+  .animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+  }
+  
+  @-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+  }
+  
+  @keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+  }
+
+  .perks h1{
+    font-family: 'Abril Fatface', cursive;
+    width: 100%;
+    height: 60px;
+    text-align: center;
+    word-spacing: 5px;
+    font-size: 60px;
+    font-weight:normal;
+    color:rgb(255, 255, 255);
+    text-shadow: 1px 2px 2px black; 
+  
+  }
+
+  .perks p{
+    font-family: 'Abril Fatface', cursive;
+    width: 100%;
+    height: 30px;
+    text-align: center;
+    word-spacing: 5px;
+    font-size: 20px;
+    font-weight:normal;
+    color:rgb(255, 255, 255);
+    text-shadow: 1px 2px 2px black; 
+    margin: 10px 0;
+  }
+  .topnav {
+    overflow: hidden;
+   
+    background-color:rgba(105, 59, 26, 0.425);
+    width: 50%;
+    float:right;
+    
+  }
+  
+  .topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 25px;
+
+
+    
+  }
+  
+  .topnav a:hover {
+    background-color:rgba(105, 59, 26, 0.425);
+    color:white;
+  }
+  
+  .topnav a.active {
+    background-color: rgba(105, 59, 26, 0.432);
+    color: white;
+  }
+  
+ 
+
+  @media screen and (max-width: 600px){
+    .prev{
+      padding:5px;
+      margin-top:-11px;
+    }
+    .next{
+      padding:5px;
+      margin-top:-11px;
+    }
+
+
+    .nav{
+      display: none !important;
+    }
+      .topnav a {display: none;}
+      .topnav a.icon {
+    float: right;
+    display: block;
+  }
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+    padding: 10px;
+    text-decoration: none;
+    font-family: 'Abril Fatface', cursive;
+    color:white;
+  
+    
+  }
+  .responsive a :hover{
+    background:rgba(105, 59, 26, 0.356) !important;
+  }
+  .lay{
+    display: none;
+  }
+  
+  #logo {
+    display: flex !important;
+    align-items: center !important;
+    width: 100%;
+    padding: 0 120px;
+  }
+  .top{
+    width: 100%;
+    padding:0 !important;
+  }
+  .bottom{
+    width:100%;
+    padding:0 !important;
+  }
+  .deliver{
+    margin:20px;
+  }
+
+  .delivery p{
+    display: none;
+  }
+  .yum p{
+    display: none;
+  }
+  .one{
+    width:100% !important;
+    height: 140px !important;
+
+  }
+  .one img{
+    height: 120px;
+  }
+  .mySlides p {
+    font-size: 16px !important;
+    padding: 0 20px !important;
+  }
+  
+  }
+
+  @media screen and (min-width: 500px){
+    .topnav {
+      display: none;
+    }
+    .rows{
+      height: 200px !important;
+      width:400px;
+    }
+    .top-row{
+      height: 80px !important;
+      display:inline-block !important
+    }
+    .bottom-row{
+      height: 80px !important;
+      display: inline-block !important;
+    }
+    .top-row  img{
+      width: 162px !important;
+      margin-right: 25px;
+      margin-left:25px;
+    }
+    .bottom-row img{
+      width: 162px !important;
+      margin-right: 25px;
+      margin-left:25px;
+    }
+    .modal{
+      padding: 160px 20% 300px 20% !important;
+     }
+     .modal-content animate {
+      height:400px !important;
+     }
+     .delivery{
+       height: 190px;
+     }
+     .box{
+      height: 350px !important;
+    }
+    .perks-card{
+      margin: 20px 312px 0 0 !important;
+    }
+    .carousel-item img{
+      width:30% !important; 
+    }
+    .icons{
+      padding: 30px 0 0 !important;
+    }
+    .icons img{
+      margin: 0 15px !important;
+    }
+    .fun-fact img{
+      width:450px !important;
+    }
+    .bottom-logo {
+      padding-left: 395px !important;
+    }
+   
+  }
+ 
+  @media screen and (max-width: 600px) {
+    .topnav .responsive a :hover{
+      background:rgba(105, 59, 26, )}
+
+   .top{
+     padding:0 !important;
+   }
+   .bottom{
+    padding:0 !important;
+  }
+    .top-row img{
+      margin-left:0px !important;
+    }
+    .bottom-row img{
+      margin-left:0px !important;
+    }
+    .nav{
+      width: 76%;
+      margin-left:0;
+      justify-content: flex-end;
+    }
+   
+    .nav-item button{
+      width: 78px;
+      font-size: 14px;
+    }
+  
+  
+    .slogan p{
+      height: 50px;
+      font-size: 40px;
+     
+    }
+    .logo img{
+      height: 100px;
+      width: 100px;
+    }
+    .slogan h1{
+      font-size: 17px;
+      margin-top:7px;
+      align-content: center;
+    }
+    .delivery h1{
+      font-size: 72px;
+    }
+    .delivery p{
+      height: 30px;
+      margin: 5px;
+      padding:10px;
+      font-size: 18px;
+    }
+    .yum h1{
+      font-size: 50px;
+      height:170px;
+    }
+   
+    .box{
+      height: 300px;
+    }
+    .card{
+      background-image: none;
+    }
+    .card h1{
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+    .card P{
+      padding:0 50px;
+      width: 100%;
+    }
+    .perks-card{
+      margin-right: 153px !important;
+    }
+   .perk{
+     height: 270px;
+   }
+   .social h1{
+     font-size: 60px;
+
+   }
+  
+   .about-container{
+     display: none;
+   }
+   .bottom-logo{
+     padding-left: 80px !important;
+   }
+ 
+  
+  }

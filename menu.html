@@ -1,0 +1,308 @@
+<!doctype html>
+
+    <html lang="en">
+        <head>
+          <!-- Required meta tags -->
+          <meta charset="utf-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      
+          <!-- Bootstrap CSS -->
+          <link href="https://fonts.googleapis.com/css?family=Abril+Fatface&display=swap=" rel="stylesheet"> 
+          <link rel="stylesheet" href="style.css">
+          <link rel="stylesheet" href="menu.css">
+          <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ 
+          <title>Food and Drinks</title>
+    </head>  
+
+    <style>
+        @media screen and (max-width: 600px) {
+          .head{
+            background-position-x: -439px !important;
+            background-size: cover !important;
+          }
+          .footer-logo{
+            padding-left:0 !important;
+          }
+
+          .social-icons{
+            display: none !important;
+          
+          }
+          .food{
+            height: 1200px !important;
+            padding: 0 !important;
+          }
+          .food #sand{
+            width: 100% !important;
+          }
+          .food #bag{
+            width: 100% !important;
+          }
+          .food #sna{
+            width: 100% !important;
+          }
+          .food #cof{
+            width: 100% !important;
+          }
+
+        }
+      @media screen and (max-width: 400px){
+        .food .one{
+          height: 300px !important;
+        }
+        .food .two{
+          height: 300px !important;
+        }
+        .food .three{
+          height: 300px !important;
+        }
+        .food .four{
+          height: 300px !important;
+        }
+        .middle{
+          height: 180px !important;
+        }
+        .flex-container .inner{
+          width:100% !important;
+        }
+        .flex-container .paragraph{
+          width: 100% !important;
+          text-align: justify;
+       
+        }
+      
+        #middle{
+          width:auto !important;
+        }
+        .middle h1{
+          font-size: 25px !important;
+          width: 100% !important;
+        }
+        .middle p{
+          width: 100% !important;
+          font-size: 17px !important;
+        }
+        
+      }    
+      </style>
+
+<body>
+     <!--main navbar-->
+   
+     <nav class=" bar navbar navbar-expand-lg " >
+        <div class="flex-container" id="logo" style="width: 22% "> 
+           <a class="navbar-brand logo" href="index.html" class="margin:0;padding:0;">
+               <img src="images/logo.png" alt="oh bagels!">
+           </a>
+         </div>    
+               <ul class="nav flex-container">
+                   <li class="nav-item">
+                     <div class="dropdown">
+                     <button style=" padding: 0 5px; margin: 0 5px; text-shadow: none; border: 1px solid rgba(168, 104, 8, 0.39);z-index: 0; "
+                       class=" btn dropdown-toggle nav-link" type="button" data-toggle="dropdown">Menu<span class="caret">
+                         </span></button>
+                       <ul class="dropdown-menu" style="height: 220px; z-index: 1; ">
+                         <a href="menu.html"><li style="padding: 5px; color:rgba(168, 104, 8, 0.39);text-shadow: none; font-size: 20px; height: 40px;">Food and Drinks </li></a>
+                        <a href="bagels.html"><li style="padding: 5px; color:rgba(168, 104, 8, 0.39);text-shadow: none; font-size: 20px; height: 40px;">Bagels </li></a>
+                        <a href="sandwhich.html"><li style="padding: 5px; color:rgba(168, 104, 8, 0.39);text-shadow: none; font-size: 20px;">Sandwhiches</li></a> 
+                        <a href="coffee.html"><li style="padding: 5px; color:rgba(168, 104, 8, 0.39);text-shadow: none; font-size: 20px;" >Coffee</li></a> 
+                        <a href="snacks.html"><li style="padding: 5px; color:rgba(168, 104, 8, 0.39);text-shadow: none; font-size: 20px;" >Snacks</li></a>
+                       </ul>
+                      
+                     </div>
+                   </li>
+                   <li class="nav-item" style="margin: 0 0 0 5px">
+                     <a class="nav-link" href="About.html" style="background: none; padding: 0 5px"><button>About Us</button></a>
+                   </li>
+                   <li class="nav-item" style="margin: 0 ">
+                     <button onclick="document.getElementById('signUp').style.display='block'"
+                      type="button" class="btn " style="margin: 0 10px;">Sign Up</button>
+                     </li>
+                   </ul>         
+                 </nav>  
+
+     <!--End of main navbar-->
+
+     <!--mobile nav-->
+     <div class="topnav flex-container" id="myTopnav" style=" width: 100%">
+       
+       <a href="menu.html">MENU</a>
+       <a href="bagels.html">BAGELS</a>
+       <a href="sandwhich.html">SANDWHICHES</a>
+       <a href="coffee.html">COFFEE</a>
+       <a href="snacks.html">SNACKS</a>
+       <a href="About.html">ABOUT US</a>
+       <a onclick="document.getElementById('signUp').style.display='block'"
+       type="button" class="btn " style="margin: 0 10px;color:white">Sign Up</a>
+       <a href="javascript:void(0);" class="icon" onclick="drop()">
+         <i class="fa fa-bars" style="width: 100%; z-index: 1;height: 40px;padding:8px"></i>
+       </a>
+     </div>
+
+     <!--End of mobile nav-->
+       
+      <!--Modal-->
+
+      <div align="center" id="signUp" class="modal" style="width: 100%; height: 100%; padding: 160px 20% 300px 20%;">
+        <span onclick="document.getElementById('signUp').style.display='none'" 
+      class="close" title="Close Modal">&times;</span>
+      
+        <!-- Modal Content -->
+        <form class="modal-content animate" action="/action_page.php" style="height:400px; width:100%;">
+          <div class="imgcontainer">
+            <img src="images/negan.jpg" alt="Avatar" class="avatar" style="width: 200px; margin-top: 15px; height: 200px;
+            vertical-align: none; border-radius: 97px;">
+          </div>
+      
+          <div class="container" style=" margin-top: 20px;">
+            <label for="uname"><b>Username</b></label>
+            <input type="text" placeholder="Enter Username" name="uname" required>
+      
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" required>
+      
+            <button type="submit" style="background-color:rgba(168, 104, 8, 0.39);color: white;
+            border: none; ">Login</button>
+            <label>
+              <input type="checkbox" checked="checked" name="remember"> Remember me
+            </label>
+          </div>
+      
+          <div class="container" style="background-color:rgba(168, 104, 8, 0.39);">
+            <button type="button" onclick="document.getElementById('signUp').style.display='none'" 
+            style=" background-color: white; color:rgba(168, 104, 8, 0.39);" class="cancelbtn">Cancel</button>
+            <span class="psw">Forgot <a href="#">password?</a></span>
+          </div>
+        </form>
+      </div> 
+    
+      <!--End of Modal-->
+
+       <!--header-->
+
+          <div class="flex-container" style="width: 100%; height: 400px;">
+            <div class="flex-container head">
+
+            </div>
+          </div>
+
+
+       <!--End of header-->
+
+       <!--middle-->
+          <div class="flex-container middle" style=" height: 280px; width: 100%;;">
+            <div class="flex-container inner" style="width: 400px; margin: 0 auto;">
+              <div class="flex-container" id="middle" style="width: 100%">
+                <h1>OH BAGELS GREAT</h1> 
+                <h1>SELECTION</h1>
+              </div>
+
+              <div class="flex-container paragraph" style="width: 400px">
+                <p>
+                  Our menu is full of great-tasting items
+                   that will get you going and keep you running
+                    throughout your busy day. Plus, they’re always
+                     made to order—just the way you like.
+                </p>
+              </div>
+            </div>
+          </div>
+       <!--End of middle-->
+
+       <!--boxes-->
+
+          <div class="flex-container boxes food" style="width: 100%; height:600px; padding: 0px 120px;">
+
+            <div class="flex-container one item" id="sand" style="width:60%; height: 280px;">
+              <div style="width:100%; height: 280px;">
+                <div style="overflow: hidden;"><a href="sandwhich.html"><img src="images/pic2.jpg"></a></div>
+                <h3 style="background-color:rgba(168, 104, 8, 0.39);height: 50px;
+                color:rgb(105, 59, 26);;font-family: 'Abril Fatface' cursive;
+                font-weight: 600 bold;padding: 6px 0 0 30px; margin: 0;">Sandwhiches</h3>
+              </div>
+            </div>
+
+            <div class="two item" id="bag" style="width: 33.3%; height: 280px">
+              <div style="width:100%; height: 280px;">
+                <div style="overflow: hidden;"><a href="bagels.html"><img src="images/menu/low-carb-keto-bagels-11-700x584.jpg"></a></div>
+                <h3 style="background-color:rgba(168, 104, 8, 0.39);height: 50px;
+                color:rgb(105, 59, 26);;font-family: 'Abril Fatface' cursive;
+                font-weight: 600 bold;padding: 6px 0 0 30px; margin:0;">Bagels</h3>
+              </div>
+            
+            </div>
+
+            <div class="three item" id="sna" style="width:33.3%; height: 280px">
+              <div style="width:100%; height: 280px;">
+                <div style="overflow: hidden;"><a href="snacks.html"><img src="images/menu/cookies.jpg"></a></div>
+                <h3 style="background-color:rgba(168, 104, 8, 0.39);height: 50px;
+                color:rgb(105, 59, 26);;font-family: 'Abril Fatface' cursive;
+                font-weight: 600 bold;padding: 6px 0 0 30px; margin:0;">Snacks</h3>
+              </div>
+            </div>
+
+            <div class="four item" id="cof" style="width:60%; height:280px">
+              
+                <div style="width:100%; height: 280px;">
+                  <div style="overflow: hidden;"><a href="coffee.html"><img src="images/menu/espresso.jpg"></a></div>
+                  <h3 style="background-color:rgba(168, 104, 8, 0.39);height: 50px;
+                  color:rgb(105, 59, 26);;font-family: 'Abril Fatface' cursive;
+                  font-weight: 600 bold;padding: 6px 0 0 30px; margin:0;">Coffee</h3>
+                </div>
+            
+            </div>
+
+          </div>
+
+       <!--End of boxes-->
+
+       <!--footer-->
+
+       <div class="flex-container foot" style=" width:100%; height: 100px;background-color:#e7eaee; margin-top: 30px">
+          <div class="footer" style="display: table; width: 100%">
+            <div style="display: inline-flex; width: 100%;"> 
+              <h4 style="font-size: 13px; margin: 40px 0 0 0; padding: 0 25px;">&copy;2019 <span style="color: white;font-size: 22px;">K.Martin</span></h3>
+               <div class="flex-container footer-logo" align="center" style=" padding-left: 360px;margin:20px 0 0 0;"><img src="images/logo.png" style="width: 120px"></div>
+               
+               <div align="right" class="social-icons" style=" width: 200px; display: table; padding: 19px 0 0; margin-left: 255px;"> 
+                  <div style="float: left;font-family: 'Abril Fatface', cursive; 
+                  color: rgba(168, 104, 8, 0.39); padding: 0 0 0 9px; ">
+                    <h4 style="font-size: 15px; word-spacing: 5px">FOLLOW US</h4></div>
+                <div class="social-icons" style="display: inline-flex;">
+                  
+                   <a href="#"><img src="images/icons8-facebook-circled-50.png" style="width: 30px; height: 30px; margin: 0 10px"></img></a>
+                   <a href="#"><img src="images/icons8-instagram-old-50.png" style="width: 30px; height: 30px; margin: 0 10px"></img></a>
+                   <a href="#"><img src="images/icons8-pinterest-50.png" style="width: 30px; height: 30px; margin: 0 10px"></img></a>
+                   <a href="#"><img src="images/icons8-twitter-circled-50.png" style="width: 30px; height: 30px; margin: 0 10px"></img></a>
+                   <a href="#"><img src="images/icons8-youtube-50.png" style="width: 30px; height: 30px; margin: 0 10px"></img></a>
+   
+                   </div>
+                 </div>
+            </div>
+
+          </div>
+
+        </div>
+
+       <!--End of footer-->
+            
+       <script>
+          function drop() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+              x.className += " responsive";
+            } else {
+              x.className = "topnav";
+            }
+          }
+         </script>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+</body>
+</html>

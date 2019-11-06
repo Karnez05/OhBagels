@@ -1,0 +1,35 @@
+.video{
+    background-image: url(images/bagels/homemade-bagels.jpg);
+   
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.video h1{
+    font-family: 'Abril Fatface', cursive; 
+    font-size: 60px;
+    margin: 0;
+    color: white; 
+    text-shadow: 0px 0px 10px black;
+    word-spacing: 5px;
+}
+
+.video p {
+    font-family: 'Abril Fatface'; 
+    font-size: 20px;
+    margin: 0;
+    color: white; 
+    text-shadow: 0px 0px 10px black;
+    word-spacing: 4px;  
+}
+
+
+.boxes{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.item h3{
+    font-size: 20px;
+}

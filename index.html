@@ -1,0 +1,380 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface&display=swap=" rel="stylesheet"> 
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Oh Bagels</title>
+  </head>
+  <script>
+    function drop() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+   
+  
+    
+    </script>
+  
+ 
+  <body>
+      <!--main navbar-->
+   
+    <nav class=" bar navbar navbar-expand-lg " >
+         <div class="flex-container" id="logo" style="width: 22% "> 
+            <a class="navbar-brand logo" href="index.html" class="margin:0;padding:0;">
+                <img src="images/logo.png" alt="oh bagels!">
+            </a>
+          </div>    
+                <ul class="nav flex-container">
+                    <li class="nav-item">
+                      <div class="dropdown">
+                      <button style=" padding: 0 5px; margin: 0 5px; text-shadow: none; border: 1px solid rgba(168, 104, 8, 0.39);z-index: 0; "
+                        class=" btn dropdown-toggle nav-link" type="button" data-toggle="dropdown">Menu<span class="caret">
+                          </span></button>
+                        <ul class="dropdown-menu" style="height: 220px;z-index: 1; ">
+                          <a href="menu.html"><li style="padding: 5px; color:rgba(168, 104, 8, 0.39);text-shadow: none; font-size: 20px; height: 40px;">Food and Drinks </li></a>
+                         <a href="bagels.html"><li style="padding: 5px; color:rgba(168, 104, 8, 0.39);text-shadow: none; font-size: 20px; height: 40px;">Bagels </li></a>
+                         <a href="sandwhich.html"><li style="padding: 5px; color:rgba(168, 104, 8, 0.39);text-shadow: none; font-size: 20px;">Sandwhiches</li></a> 
+                         <a href="coffee.html"><li style="padding: 5px; color:rgba(168, 104, 8, 0.39);text-shadow: none; font-size: 20px;" >Coffee</li></a> 
+                         <a href="snacks.html"><li style="padding: 5px; color:rgba(168, 104, 8, 0.39);text-shadow: none; font-size: 20px;" >Snacks</li></a>
+                        </ul>
+                       
+                      </div>
+                    </li>
+                    <li class="nav-item" style="margin: 0 0 0 5px">
+                      <a class="nav-link" href="About.html" style="background: none; padding: 0 5px"><button>About Us</button></a>
+                    </li>
+                    <li class="nav-item" style="margin: 0 ">
+                      <button onclick="document.getElementById('signUp').style.display='block'"
+                       type="button" class="btn " style="margin: 0 10px;">Sign Up</button>
+                      </li>
+                    </ul>         
+                  </nav>  
+ 
+      <!--End of main navbar-->
+
+      <!--mobile nav-->
+      <div class="topnav flex-container" id="myTopnav" style=" width: 100%">
+        
+        <a href="menu.html">MENU</a>
+        <a href="bagels.html">BAGELS</a>
+        <a href="sandwhich.html">SANDWHICHES</a>
+        <a href="coffee.html">COFFEE</a>
+        <a href="snacks.html">SNACKS</a>
+        <a href="About.html">ABOUT US</a>
+        <a onclick="document.getElementById('signUp').style.display='block'"
+        type="button" class="btn " style="margin: 0 10px;color:white">Sign Up</a>
+        <a href="javascript:void(0);" class="icon" onclick="drop()">
+          <i class="fa fa-bars" style="width: 100%; z-index: 1;height: 40px;padding:8px"></i>
+        </a>
+      </div>
+
+      <!--End of mobile nav-->
+ 
+      <!--Modal-->
+
+      <div align="center" id="signUp" class="modal" style="width: 100%; height: 100%; padding: 160px 10% 300px 10%;">
+        <span onclick="document.getElementById('signUp').style.display='none'" 
+      class="close" title="Close Modal">&times;</span>
+      
+        <!-- Modal Content -->
+        <form class="modal-content animate" action="/action_page.php" style="height:450px; width:100%;">
+          <div class="imgcontainer">
+            <img src="images/negan.jpg" alt="Avatar" class="avatar" style="width: 200px; margin-top: 15px; height: 200px;
+            vertical-align: none; border-radius: 97px;">
+          </div>
+      
+          <div class="container" style=" margin-top: 20px;">
+            <label for="uname" style="padding: 0 5px 0 0"><b>Username:</b></label>
+            <input type="text" placeholder="Enter Username" name="uname" required>
+      
+            <label for="psw" style="padding: 0 5px 0 5px"><b>Password:</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" required>
+      
+            <button type="submit" style="background-color:rgba(168, 104, 8, 0.39);color: white;
+            border: none; padding: 0px; width: 70px; height: 30px; font-size: 20px; margin:3px; ">Login</button>
+            <label style="margin:10px ">
+              <input type="checkbox" checked="checked" name="remember"> Remember me
+            </label>
+          </div>
+      
+          <div class="container" style="background-color:rgba(168, 104, 8, 0.39); margin: 10px 0;">
+            <button type="button" onclick="document.getElementById('signUp').style.display='none'" 
+            style=" background-color: white; color:rgba(168, 104, 8, 0.39);" class="cancelbtn">Cancel</button>
+            <span class="psw">Forgot <a href="#">password?</a></span>
+          </div>
+        </form>
+      </div> 
+    
+      <!--End of Modal-->
+
+      
+        <!--header-->
+        
+        <div class="flex-container layout">
+            <div class="slogan flex-container" style="height: 100%">
+                
+                    <div class="flex-container lay" style="height: 400px"><p>BAGELS ALL DAY LONG!</p>
+                
+                  <h1>Freshly made with delicious ingredients, our <br>
+                    breakfast sandwiches are stacked with flavor.</div>
+              
+               
+            </div>
+
+            <!--End of header-->
+
+            <!--Delivery-->
+
+            <div class="flex-container" >
+              <div align="center" class="flex-container delivery" style="width: 100%; height: 210px; padding: 20px">
+                  <div class="flex-container" style="height: 150px">
+                    <h1> OH! Delivery</h1>
+                    <p>Get your favorite Coffee & Donuts delivered </p>
+                   </div> 
+             </div>
+
+             <div class="flex-container rows" style="width: 100%; height: 370px; margin: 10px 0;"> 
+             
+              <div class="top-row" align="center"class="flex-container" style="width: 100%; height:180px">
+                <div class="top" style="display:inline-block;width: 100%; padding:0 270px" >
+                  <ul style="list-style-type: none; padding-left: 0px; display: inline;">
+                    <li><a href="#"><img src="images/grubhub.png" style="width: 100%; height: 50px; float: left; margin-bottom: 5px;"></a></li>
+                    <li><a href="#"><img src="images/doordash.png" style="width: 100%; height: 50px; float: left;margin-bottom: 5px;"></a></li>
+                    <li><a href="#"><img src="images/uber.png" style="width: 100%; height:50px; float:left; margin-bottom:5px;"></a></li>
+                  </ul>
+                </div>
+              </div>
+           
+
+            <div class="bottom-row" align="center"class="flex-container"  style="width: 100%; height: 180px">
+                <div class="bottom" style="display:inline-block;width: 100%; padding:0 270px">
+                  <ul style="list-style-type: none; padding-left: 0px; display: inline;">
+                    <li><a href="#"><img src="images/postmates.png" style="width: 100%; height: 50px;float: left; margin-bottom: 5px;"></a></li>
+                    <li><a href="#"><img src="images/tapingo.png" style="width: 100%; height: 50px;float: left;margin-bottom: 5px;margin-right:10px;border: 2px solid rgb(255, 72, 0);"></a></li>
+
+                    <li><a href="#"><img src="images/talabat.png"style="width: 100%; height: 50px; margin-bottom: 5px;"></a></li>
+                  </ul>
+                </div>
+            </div>
+            </div>
+            <!--End of Delivery-->
+
+            <!--menu-->
+
+            <div class="flex-container yum" style="width: 100%; height:400px;">
+
+              <div class="text" style="height:250px"> 
+                <h1> COME AND GET IT</h1>
+                <p>We will get you hooked.</p>
+              </div>
+
+              <div align="center" class="nav-item"> 
+               <a href="menu.html"><button type="button" class="btn " style="width: 250px;">MENU</button></a>
+              </div>
+
+            </div>
+
+            <!--End of menu-->
+
+            <!--under menu-->
+            <div class="flex-container box" style="width: 100%; height:450px; padding: 15px;">
+                <div class="boxes" style="width: 100%; height: 100%;">
+      
+                  <div class="flex-container one" style="width:33.3%; height: 300px; padding:10px;">
+                    <div style="width:100%; height: 300px;">
+                      <div style="overflow: hidden;"><a href="sandwhich.html"><img src="images/menu.jpg"></a></div>
+                     <h3 style="height: 50px; display:block; width: 100%;
+                      color:white;font-family: 'Abril Fatface' cursive;
+                      font-weight: 600 bold;padding: 11px 0 0 100px; margin: -80px;">Sandwhiches</h3>
+                    </div>
+                </div>
+
+                <div class="flex-container one item" style="width:33.3%; height: 300px; padding:10px;">
+                  <div style="width:100%; height: 300px;">
+                    <div style="overflow: hidden;"><a href="coffee.html"><img src="images/coffee.jpg"></a></div>
+                    <h3 style="height: 50px; width: 100%;
+                    color:white;font-family: 'Abril Fatface' cursive;display: block;
+                    font-weight: 600 bold;padding: 11px 0 0 100px; margin: -80px;">Coffee</h3>
+                  </div>
+              </div>
+
+              <div class="flex-container one item" style="width:33.3%; height: 300px; padding:10px;">
+                <div style="width:100%; height: 300px;">
+                  <div style="overflow: hidden;"><a href="snacks.html"><img src="images/cookies.jpg"></a></div>
+                  <h3 style="height: 50px; text-shadow: 1px 1px 1px black; width: 100%;
+                  color:white;font-family: 'Abril Fatface' cursive;display: block; 
+                  font-weight: 600 bold;padding: 11px 0 0 100px; margin: -80px;">Snacks</h3>
+                </div>
+            </div>
+
+
+                      
+      
+      
+                </div>
+               </div>
+      
+            <!--End of Under menu-->
+          
+            
+            <!--Perks-->
+              <div class="flex-container perk" style="width: 100%; height:300px; border: none;"> 
+              
+                    <div class="card" style="width: 100%; height: 300px; border: none"> 
+                        <h1>GIVE'EM SOME BAGELS</h1>
+                        <div align="right" class="cardP"> 
+                        <p>In-Store, through the app, even email, its always time to give someone a perks card.</p>
+                        </div>
+                        <div align="right" class="nav-item perks-card" style=" margin:20px 50px"> 
+                            <a href="perks.html"><button type="button" class="btn" style="width: 250px; padding:0;">Perks Card</button></a>
+                           </div>
+
+                    </div>
+       
+              </div>
+
+            <!--End of Perks-->
+
+            <!--Start of Social-->
+
+            <div class="social" class="flex-container">
+              <div align="center">
+                <H1>
+                  SOCIAL FEED
+                </H1>
+
+              </div>
+
+              <div class="feed" class="carousel slide" data-ride="carousel" style="width: 100%">
+                <div align='center' class="carousel-inner" style="width:100%"> 
+      
+                    <div class="carousel-item active">
+                        <img src="images/pic1.png" style="width: 70%; height: 250px">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="images/pic2.jpg" style="width: 70%; height: 250px">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="images/pic3.jpg" style="width: 70%; height: 250px">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="images/pic4.jpg" style="width: 70%; height: 250px">
+                      </div> 
+                      <div class="carousel-item">
+                        <img src="images/pic5.jpg" style="width: 70%; height: 250px">
+                      </div> 
+                      <div class="carousel-item">
+                          <img src="images/pic6.jpg" style="width: 70%; height: 250px">
+                        </div> 
+                    </div>
+                  
+
+                </div>
+              
+          
+              <div align="center" class="icons" style=" width: 100%; display: table; padding: 10px 0 0;"> 
+               <div style="display: inline-flex;">
+               
+                <a href="#"><img src="images/icons8-facebook-circled-50.png" style="width: 50px; height: 40px; margin: 0 10px"></img></a>
+                <a href="#"><img src="images/icons8-instagram-old-50.png" style="width: 50px; height: 40px; margin: 0 10px"></img></a>
+                <a href="#"><img src="images/icons8-pinterest-50.png" style="width: 50px; height: 40px; margin: 0 10px"></img></a>
+                <a href="#"><img src="images/icons8-twitter-circled-50.png" style="width: 50px; height: 40px; margin: 0 10px"></img></a>
+                <a href="#"><img src="images/icons8-youtube-50.png" style="width: 50px; height: 40px; margin: 0 10px"></img></a>
+
+                </div>
+              </div>
+
+            </div>
+
+            <!--End of Social-->
+
+            <!--fact and about-->
+
+              <div class="flex-container" style="width: 100%; height: 400px; ">
+                <div style="display:flex; flex-direction: row; flex-wrap: nowrap">
+                    <div align="center" style=" width: 595px; margin: 90px 0 30px 0;">
+                    <div class="fun-fact"> 
+                      <a href="#"><img src="images/cartoon bagel.png" style="padding: 20px; height: 200px; width: 100%; border-top:5px solid rgba(168, 104, 8, 0.39);border-bottom:5px solid rgba(168, 104, 8, 0.39)"></a>
+                      <div class="slideshow-container">
+
+                        <!-- Full-width slides/quotes -->
+                        <div class="mySlides">
+                          
+                          <p>When we was started in Tampa, its name was “Big Bagels.”</p>
+                          
+                        </div>
+                      
+                        <div class="mySlides">
+                          <p>You’ll get a fresh cup of coffee, trust us.</p>
+                         
+                        </div>
+                      
+                        <div class="mySlides">
+                          <p>We sell more coffee than donuts.</p>
+                          
+                        </div>
+                      
+                        <!-- Next/prev buttons -->
+                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                      </div>
+                      
+                      <!-- Dots/bullets/indicators -->
+                      <div class="dot-container">
+                        <span class="dot" onclick="currentSlide(1)"></span> 
+                        <span class="dot" onclick="currentSlide(2)"></span> 
+                        <span class="dot" onclick="currentSlide(3)"></span> 
+                      </div> 
+                    </div>
+                  </div>
+
+                    <div align="center" class="about-container" style=" width: 550px; margin: 90px 0 30px 0; height: 275px;">
+                    <div class="about" style="width:550px">
+
+                    <a href="About.html"><img src="images/about.png" style="padding: 20px; height: 200px; width: 450px;border-top:5px solid rgba(168, 104, 8, 0.39);border-bottom:5px solid rgba(168, 104, 8, 0.39)"></a>
+                    </div>
+                    </div>
+                </div>
+              </div>
+
+            <!--End of fact and about-->
+
+            <!--start of footer-->
+
+              <div class="flex-container foot" style=" width:100%; height: 100px;background-color:#e7eaee;">
+                <div class="footer" style="display: table; width: 100%;padding: 0 0 0 30px;margin-top:50px;">
+                  <div style="display: inline-flex;"> 
+                    <h4 style="font-size: 13px; margin: 40px 0 0 0;">&copy;2019 <span style="color: white;font-size: 22px;">K.Martin</span></h3>
+                     <div align="center" class="bottom-logo"style="margin:20px 0 0 0;"><img src="images/logo.png" style="width: 120px;"></div>
+
+                     <div align="right"><button onclick="topFunction()" id="myBtn" title="Go to top">TOP</button> </div>
+           
+                  </div>
+
+                </div>
+
+              </div>
+              <!--End of Footer-->
+
+  
+   
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+   
+    <script src="main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    
+</body>
+</html>
